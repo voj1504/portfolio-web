@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - [Seu Nome]</title>
+    <meta name="robots" content="noindex, nofollow">
+    <title>Portfólio — Vitor Ohse Junior</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,23 +16,72 @@
     </nav>
 
     <section id="sobre">
-        <h1>Sobre mim</h1>
-        <p>Conteúdo provisório sobre mim.</p>
+    <h2>Sobre mim</h2>
+
+    <p>Me chamo Vitor Ohse Junior, moro em Carazinho-RS e trabalho no RH 
+    da Prefeitura de Carazinho, onde sou responsável pela confecção da 
+    folha de pagamento dos servidores municipais, geração de encargos 
+    trabalhistas e previdenciários, manutenção da vida funcional dos 
+    servidores, realização de cálculos trabalhistas e implementação das 
+    diretrizes da LGPD no âmbito municipal.</p>
+
+    <p>Meus principais interesses fora do trabalho incluem filosofia, 
+    literatura, lógica, neurociência, evolução tecnológica, processamento 
+    de dados e automação de processos.</p>
     </section>
 
     <section id="formacao">
-        <h1>Formação</h1>
-        <p>Conteúdo provisório de formação.</p>
+        <h2>Formação</h2>
+        <ul>
+            <li>Aluno do curso de bacharelado em Ciência da Computação na Universidade UNINTER (2024 – Presente)</li>
+            <li>Aluno do curso de bacharelado em Filosofia na Universidade Federal de Santa Maria – UFSM (2012 – 2013)</li>
+            <li>Aluno do curso de bacharelado em Filosofia na Universidade Federal de Pelotas – UFPel (2014)</li>
+            <li>Aluno do curso de bacharelado em Letras – Alemão na Universidade Federal de Santa Catarina – UFSC (2016-2018)</li>
+            <li>Aluno do curso de bacharelado em Ciências Jurídicas na Universidade de Passo Fundo – UPF (2019)</li>
+        </ul>
+
+        <h3>Idiomas</h3>
+        <ul>
+            <li>Inglês — fluente (leitura e compreensão), intermediário (produção)</li>
+            <li>Espanhol — fluente (leitura e compreensão), intermediário (produção)</li>
+            <li>Alemão — intermediário</li>
+        </ul>
     </section>
 
     <section id="portfolio">
-        <h1>Portfólio</h1>
-        <p>Conteúdo provisório de portfólio.</p>
+        <h2>Portfólio</h2>
+        <ul>
+            <li>
+                <a href="https://github.com/voj1504/nome-do-repo" target="_blank">Calculadora de retroativos</a>: cálculo de diferenças salariais retroativas (Python)
+            </li>
+            <li>
+                <a href="https://github.com/voj1504/nome-do-repo" target="_blank">Conversor de artigos científicos e literários para EPUB</a>: converte URLs e arquivos HTML/PDF em e-books (Python)
+            </li>
+            <li>
+                <a href="https://github.com/voj1504/nome-do-repo" target="_blank">Unificador de PDFs</a>: combina múltiplos PDFs em um único arquivo (Python)
+            </li>
+        </ul>
     </section>
 
     <section id="contato">
-        <h1>Contato</h1>
-        <p>Conteúdo provisório de contato.</p>
+        <h2>Contato</h2>
+        <p>Preencha os dados abaixo para falar comigo.</p>
+        
+        <form id="form-contato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <p id="mensagem-erro" style="color: red; display: none;">Por favor, preencha todos os campos.</p>
+        <p id="mensagem-sucesso" style="color: green; display: none;">Mensagem enviada com sucesso!</p>
     </section>
 
     <script src="script.js"></script>
