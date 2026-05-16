@@ -59,3 +59,45 @@ button {
     cursor: pointer;
     font-weight: bold;
 }
+
+/* Botão do tema — visível em ambos os modos */
+#btn-tema {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    padding: 4px 10px;
+    font-family: inherit;
+    font-size: 0.85rem;
+}
+
+/* Tema escuro — ativado via JS */
+body.tema-escuro {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+body.tema-escuro nav {
+    background-color: #f0f0f0;
+}
+
+body.tema-escuro nav a {
+    color: #000;
+}
+
+body.tema-escuro #btn-tema {
+    border-color: #000;
+    color: #000;
+}
+
+body.tema-escuro input,
+body.tema-escuro textarea {
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+    border-color: #f0f0f0;
+}
+
+body.tema-escuro button[type="submit"] {
+    background-color: #f0f0f0;
+    color: #000;
+}
