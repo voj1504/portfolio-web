@@ -6,7 +6,7 @@ const campoMensagem = document.getElementById("mensagem");
 const msgErro = document.getElementById("mensagem-erro");
 const msgSucesso = document.getElementById("mensagem-sucesso");
 
-// 2. Escuta o evento de envio do formulário
+// 2. "Escuta" o evento de envio do formulário
 form.addEventListener("submit", function(evento) {
 
     // 3. Impede o comportamento padrão (recarregar a página)
